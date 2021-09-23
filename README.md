@@ -17,12 +17,6 @@ The server module is build in such a way you can also develop another client-mod
 | ![](https://www.mupload.nl/img/7i7jfo.jpg)|Hao Wang| H.Wang-26@student.tudelft.nl|
 | ![](https://gitlab.ewi.tudelft.nl/uploads/-/system/user/avatar/2577/avatar.png?width=400) | Dibyendu Trinanjan Gupta | D.T.Gupta@student.tudelft.nl|
 
-<!-- Instructions (remove once assignment has been completed -->
-<!-- - Add (only!) your own name to the table above (use Markdown formatting) -->
-<!-- - Mention your *student* email address -->
-<!-- - Preferably add a recognisable photo, otherwise add your GitLab photo -->
-<!-- - (please make sure the photos have the same size) --> 
-
 ## How to run it
 To run it run the MainApp file for the client and the ServerApp file for the server. 
 Also make sure your database is configured in the DbConfig file, we do provide a testing database in our repository.
