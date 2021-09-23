@@ -7,15 +7,15 @@ The server module is build in such a way you can also develop another client-mod
 
 ## Group members
 
-| 📸 | Name | Email |
-|---|---|---|
-| ![](https://media-exp1.licdn.com/dms/image/C4E03AQGOt0or20aomQ/profile-displayphoto-shrink_200_200/0?e=1586995200&v=beta&t=7LrFWgi9_kjDZ1P69L3ivYMbFJbbgjszO9n5_dfCH8k) | Ethan Keller | E.keller@student.tudelft.nl |
-| ![](https://www.mupload.nl/img/abjh9403dq.jpg) | Mathijs van der Schoot | M.C.L.vanderschoot@student.tudelft.nl|
-| ![](https://www.mupload.nl/img/eug90128ssv0.jpg) | Otte van Dam | O.M.D.vandam@student.tudelft.nl|
-| ![](https://www.mupload.nl/img/r10oz87.21.25.jpeg)|Ryo Iizuka|r.iizuka@student.tudelft.nl|
-| ![](https://www.mupload.nl/img/ephyjcq4f.net-resizeimage.jpg)|Leon Verhaegh| L.Verhaegh@student.tudelft.nl|
-| ![](https://www.mupload.nl/img/7i7jfo.jpg)|Hao Wang| H.Wang-26@student.tudelft.nl|
-| ![](https://gitlab.ewi.tudelft.nl/uploads/-/system/user/avatar/2577/avatar.png?width=400) | Dibyendu Trinanjan Gupta | D.T.Gupta@student.tudelft.nl|
+| Name | Email |
+|---|---|
+| Ethan Keller | E.keller@student.tudelft.nl |
+| Mathijs van der Schoot | M.C.L.vanderschoot@student.tudelft.nl|
+| Otte van Dam | O.M.D.vandam@student.tudelft.nl|
+| Ryo Iizuka|r.iizuka@student.tudelft.nl|
+| Leon Verhaegh| L.Verhaegh@student.tudelft.nl|
+| Hao Wang| H.Wang-26@student.tudelft.nl|
+| Dibyendu Trinanjan Gupta | D.T.Gupta@student.tudelft.nl|
 
 ## How to run it
 To run it run the MainApp file for the client and the ServerApp file for the server. 
