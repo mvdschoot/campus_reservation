@@ -1,0 +1,6 @@
+.track {
+	-fx-background-color: linear-gradient(to right, blue 0%, green 100%);
+	-fx-background-insets: 0 0 -1 0, 0, 1;
+	-fx-background-radius: 0.25em, 0.25em, 0.166667em; /* 3 3 2 */
+	-fx-padding: 0.25em; /* 3 */
+}

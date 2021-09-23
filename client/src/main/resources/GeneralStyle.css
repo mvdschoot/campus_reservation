@@ -1,0 +1,330 @@
+/*
+A JavaFX css stylesheet to make the interface look nice.
+ */
+
+
+* {
+    -color: #203D51;
+    -darkBlue: #1D2B5C;
+    -white: #FFFEFF;
+    -black: #302D2B;
+    -grey: #AEBCBF;
+    -lightDarkGrey: #bdbdbd;
+    -lightGrey: #EEEEEE;
+    -darkGrey: #798790;
+    -blueGrey: #788195;
+}
+
+.root {
+    -fx-border-color: transparent;
+    -fx-background-color: -white;
+    -fx-fill-width: true;
+    -fx-color: -color;
+    -fx-fill-height: true;
+    -fx-font-family: 'Segoe UI';
+    -fx-focus-color: transparent;
+    -fx-faint-focus-color: transparent;
+}
+
+/*
+ * ********************
+ * LABELS & TEXTS
+ * ********************
+*/
+.label {
+    -fx-text-fill: -black;
+}
+
+.text {
+    -fx-text-fill: -black;
+}
+
+#usernameLabel, #foodNameLabel {
+    -fx-text-fill: -blueGrey;
+}
+
+/*
+ * ********************
+ * BUTTONS
+ * ********************
+ *
+ */
+.back-button {
+    -fx-background-radius: 150px;
+    -fx-border-radius: 150px;
+    -fx-background-color: -transparent;
+}
+
+.signout-button, .bike-button {
+    -fx-background-color: -transparent;
+    -fx-text-fill: -black;
+}
+
+.button {
+    -fx-background-color: -grey, -grey, -grey, -grey;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-text-fill: -white;
+}
+
+.button:default {
+    -fx-background-color: -color;
+}
+
+.button:focused {
+    -fx-color: -darkGrey;
+    -fx-background-color: -darkGrey;
+    -fx-focus-color: -darkGrey;
+}
+
+.button:hover {
+    -fx-background-color: -darkGrey;
+    -fx-inner-border: -darkGrey;
+    -fx-body-color: -darkGrey;
+}
+
+.button:armed {
+    -fx-color: -white;
+}
+
+/*
+ * ********************
+ * DATE PICKERS
+ * ********************
+*
+*/
+.date-picker {
+    -fx-background-color: -white, -grey, gray;
+}
+
+.date-picker > *.arrow-button {
+    -fx-background-color: -white, -grey, -grey;
+}
+
+.date-picker > *.arrow-button > *.arrow {
+    -fx-background-color: -darkGrey, -black;
+}
+
+.date-picker .button {
+    -fx-background-color: transparent;
+}
+
+/*
+ * ********************
+ * RANGE SLIDERS
+ * ********************
+ */
+
+.range-slider .low-thumb, .range-slider .high-thumb {
+    -fx-background-color: -grey;
+}
+
+.range-slider .low-thumb:hover, .range-slider .high-thumb:hover {
+    -fx-background-insets: -1.4, 0, 1, 2;
+    -fx-background-radius: 1.0em;
+    -fx-background-color: -blueGrey;
+}
+
+.range-slider .low-thumb:focused, .range-slider .high-thumb:focused {
+    -fx-background-insets: 0, 1, 2;
+    -fx-background-radius: 1.0em;
+}
+
+/*
+ * ********************
+ * COMBOBOX
+ * ********************
+ *
+ */
+.combo-box {
+    -fx-background-color: -lightGrey;
+}
+
+.combo-box:hover {
+    -fx-background-color: -lightDarkGrey;
+}
+
+.combo-box .cell:selected {
+    -fx-text-fill: -black;
+}
+
+.combo-box .arrow {
+    -fx-background-color: -grey;
+}
+
+.combo-box .list-view {
+    -fx-background-color: -lightGrey;
+}
+
+.combo-box .list-cell {
+    -fx-background-color: -fx-background;
+}
+
+.combo-box .list-cell:focused {
+    -fx-background-color: -grey;
+}
+
+.combo-box .list-cell:hover {
+    -fx-background-color: -grey;
+}
+
+
+/*
+ * ********************
+ * RADIO BUTTONS
+ * ********************
+*
+*/
+.radio-button > *.radio {
+    -fx-background-color: -grey;
+}
+
+.radio-button:selected > *.radio > *.dot {
+    -fx-background-color: -black;
+}
+
+/*
+ * ********************
+ * TEXT FIELDS
+ * ********************
+ */
+
+.text-field {
+    -fx-background-color: -fx-text-box-border, -fx-background;
+    -fx-background-insets: 0, 0 0 2 0;
+    -fx-background-radius: 0;
+}
+
+.text-field:focused {
+    -fx-background-color: -fx-focus-color, -grey;
+}
+
+/*
+ * ********************
+ * SPINNERS
+ * ********************
+ */
+.spinner > *.increment-arrow-button {
+    -fx-background-color: -grey;
+}
+
+.spinner > *.decrement-arrow-button {
+    -fx-background-color: -grey;
+}
+
+/*
+ * ********************
+ * HYPERLINKS
+ * ********************
+ */
+
+.hyperlink {
+    -fx-text-fill: -blueGrey;
+}
+
+.hyperlink:focused {
+    -fx-text-fill: -grey;
+}
+
+/*
+ * ********************
+ * TABLE
+ * ********************
+ *
+ */
+.table-view {
+    -fx-background-color: transparent;
+}
+
+.table-view:row-selection {
+    -fx-background-color: -grey;
+}
+
+.table-view:row-selection > *.column-header-background {
+    -fx-background-color: -grey;
+}
+
+.table-view > *.column-resize-line {
+    -fx-background-color: -black;
+}
+
+.table-view > *.column-header-background > *.nested-column-header > *.table-column {
+    -fx-background-color: -darkGrey, -white;
+}
+
+.table-view > *.column-header-background > *.filler {
+    -fx-background-color: -darkGrey, -grey;
+}
+
+.table-view .arrow {
+    -fx-background-color: -grey;
+}
+
+.table-view > *.column-header-background > *.show-hide-columns-button .context-menu {
+    -fx-background-color: -grey;
+}
+
+.table-view > *.column-header-background > *.show-hide-columns-button .menu-item:hover {
+    -fx-background-color: -darkGrey;
+}
+
+.table-view > *.column-header-background > *.show-hide-columns-button .menu-item:focused {
+    -fx-background-color: -darkGrey;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: -black;
+}
+
+.table-row-cell {
+    -fx-background-color: -fx-table-cell-border-color, -lightGrey;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: -fx-table-cell-border-color, -white;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: -blueGrey;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+
+/*
+ * ********************
+ * SCROLL PANE
+ * ********************
+ *
+ */
+.scroll-pane > *.scroll-bar {
+    -fx-background-color: -grey;
+}
+
+.scroll-pane > *.scroll-bar > *.thumb {
+    -fx-background-color: -color;
+}
+
+/*
+ * ********************
+ * ALERTS
+ * ********************
+ *
+ */
+
+.dialog-pane {
+    -fx-background-color: fx-background;
+    -fx-border-color: transparent;
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="228.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.admin.controller.BuildingEditDialogController">
+<children>
+    <GridPane fx:id="grid" layoutX="9.0" layoutY="28.0" prefHeight="210.0" prefWidth="461.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="218.0" minWidth="10.0" prefWidth="169.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="333.0" minWidth="10.0" prefWidth="312.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="41.600012207031256" minHeight="10.0" prefHeight="40.79999389648438" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="35.199993896484386" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="12.800006103515614" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="35.0" minHeight="0.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <Label text="Building Name:" />
+            <Label text="Building Address:" GridPane.rowIndex="1" />
+            <Label text="Max Bikes:" GridPane.rowIndex="2" />
+            <TextField fx:id="buildingNameField" GridPane.columnIndex="1" />
+            <TextField fx:id="buildingAddressField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Opening hours:" GridPane.rowIndex="3" />
+            <Spinner fx:id="maxBikesField" editable="true" prefHeight="26.0" prefWidth="170.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="From: ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="openingTime" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Until: ">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Text fx:id="closingTime" strokeType="OUTSIDE" strokeWidth="0.0" text="00:00" />
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+        </children>
+    </GridPane>
+    <ButtonBar layoutX="176.0" layoutY="233.0" AnchorPane.bottomAnchor="10.0" AnchorPane.rightAnchor="10.0">
+        <buttons>
+
+                  <Button mnemonicParsing="false" onAction="#handleOkClicked" text="OK" />
+            <Button mnemonicParsing="false" onAction="#handleCancelClicked" text="Cancel" />
+        </buttons>
+    </ButtonBar>
+</children>
+</AnchorPane>

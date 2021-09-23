@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="564.0" prefWidth="911.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.admin.controller.AdminManageFoodViewController">
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="911.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#createNewFoodClicked" prefHeight="35.0" prefWidth="93.0" text="New" textFill="#0ebaf8">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#editFoodClicked" prefHeight="35.0" prefWidth="95.0" text="Edit" textFill="#0ebaf8">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#deleteFoodClicked" prefHeight="35.0" prefWidth="87.0" text="Delete" textFill="#0ebaf8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#foodBuildingClicked" prefHeight="35.0" prefWidth="93.0" text="Building" textFill="#0ebaf8">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <TableView fx:id="foodTable" prefHeight="500.0" prefWidth="900.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+        <columns>
+          <TableColumn fx:id="foodIdColumn" minWidth="100.0" prefWidth="-1.0" text="Food ID" />
+          <TableColumn fx:id="foodNameColumn" minWidth="200.0" prefWidth="279.1999816894531" text="Food Name" />
+            <TableColumn fx:id="foodPriceColumn" minWidth="90.0" prefWidth="170.4000244140625" text="Price per piece" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+   </center>
+   <top>
+      <AnchorPane prefHeight="48.0" prefWidth="911.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="14.0" layoutY="45.0" mnemonicParsing="false" onAction="#backClicked" prefHeight="35.0" prefWidth="56.0" textFill="#0ebaf8" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="7.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="43.0" fitWidth="43.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backButton.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="380.0" prefHeight="54.0" prefWidth="150.0" text="Foods" textAlignment="CENTER" textFill="#0ebaf8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="380.0" AnchorPane.rightAnchor="380.80000000000007" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="signOutButton" layoutX="797.0" layoutY="11.0" mnemonicParsing="false" onAction="#signOutButtonClicked" prefHeight="48.0" prefWidth="113.0" styleClass="signout-button" text="Sign out" textFill="#0ebaf8" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="0.6000000000000227" AnchorPane.topAnchor="11.0">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <graphic>
+                  <ImageView fitHeight="17.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@signout.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </AnchorPane>
+   </top>
+</BorderPane>

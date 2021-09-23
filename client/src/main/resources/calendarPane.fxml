@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="nl.tudelft.oopp.demo.user.calendar.controller.CalendarPaneController">
+   <center>
+      <AnchorPane fx:id="pane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="108.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="backButton" layoutX="11.0" layoutY="10.0" mnemonicParsing="false" onAction="#backButtonClicked" prefHeight="30.0" prefWidth="35.0">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="75.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@backButton.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+            <VBox alignment="CENTER" layoutX="4.0" layoutY="69.0" spacing="10.0" AnchorPane.bottomAnchor="69.39999999999998" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="4.799999999999997" AnchorPane.topAnchor="69.0">
+               <children>
+                  <Button fx:id="addItem" mnemonicParsing="false" onAction="#addItemClicked" prefHeight="36.0" prefWidth="99.0" text="Add item" textAlignment="CENTER" />
+                  <Button fx:id="weeklyView" mnemonicParsing="false" onAction="#weeklyViewClicked" prefHeight="36.0" prefWidth="99.0" text="Weekly view" textAlignment="CENTER" />
+                  <Button fx:id="monthlyView" mnemonicParsing="false" onAction="#monthlyViewClicked" prefHeight="36.0" prefWidth="99.0" text="Monthly view" />
+               </children>
+            </VBox>
+            <Button fx:id="signOutButton" layoutX="10.0" layoutY="361.6" mnemonicParsing="false" onAction="#signOutClicked" prefHeight="30.0" prefWidth="99.0" text="Sign out" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0">
+               <graphic>
+                  <ImageView fitHeight="18.0" fitWidth="51.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@signout.png" />
+                     </image>
+                  </ImageView>
+               </graphic></Button>
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
